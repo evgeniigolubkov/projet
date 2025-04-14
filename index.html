@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=header, initial-scale=1.0">
+    <title>L'Escargot — Школа французского языка</title>
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+<body>
+    <!-- Заголовок -->
+    <header class="header container">
+        <!-- Логотип -->
+        <a class="header__logo logo">L'Escargot</a>
+        <!--/ Логотип -->
+        <!-- Навигация -->
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link header__item-link--active">Главная</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Курсы</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">О школе</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+        <!--/ Навигация -->
+        <button class="header__login" type="button">
+            <img class="Logo.png" src="images/Logo.png" alt="Кабинет" width="16" height="16">
+            <span class="header__login-text">Кабинет</span>
+        </button>
+    </header>
+    <!--/ Заголовок -->
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Первый экран -->
+        <section class="section promo">
+            <div class="promo__content">
+                <h2 class="promo__title section__title">Заговори свободно на французском!</h2>
+                <p class="promo__description">С гарантией результата</p>
+                <div class="promo__buttons">
+                    <button class="promo__button-add button button--accent" type="button">Записаться</button>
+                    <button class="button" type="button">Определить уровень</button>
+                </div>
+            </div>
+            <img class="background.jpg" src="images/background.jpg" alt="background.jpg" width="602" height="602">
+        </section>
+        <!--/ Первый экран -->
+
+        <section class="section card">
+            <h2 class="section__title">Преимущества обучения в L'Escargot</h2>
+            <ul class="card__list">
+                <li class="card__item">
+                    <img class="card__icon" src="images/graduation-cap.png" alt="педагог" width="22"
+                        height="24">
+                    <h3 class="card__title">Педагог-куратор</h3>
+                    <p class="card__description">Опытный преподаватель поможет вам в изучении французского</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/school.png" alt="school" width="24"
+                        height="24">
+                    <h3 class="card__title">8 разговорных встреч в месяц</h3>
+                    <p class="card__description">Практика языка каждую неделю</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/open-book.png" alt="book" width="24"
+                        height="23">
+                    <h3 class="card__title">Рабочая тетрадь по курсу</h3>
+                    <p class="card__description">Прогресс достигается самостоятельно</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/education.png" alt="groups" width="24"
+                        height="23">
+                    <h3 class="card__title">Мини-группы 2-4 чел</h3>
+                    <p class="card__description">Внимание каждому ученику</p>
+                </li>
+               <li class="card__item">
+                   <img class="card__icon" src="images/pencil.png" alt="methodics" width="24"
+                       height="23">
+                   <h3 class="card__title">Авторская методика</h3>
+                   <p class="card__description">Экслюзивный подход к изучению языка</p>
+               </li>
+            </ul>
+        </section>
+
+        <section class="Курсы">
+                <div class="Курсы">
+                    Курсы
+                    <img class="Курсы" src="images/img1.jpeg" alt="Курсы" width="540" height="360">
+                </div>
+                <h2 class="section__description">Выберите подходящий формат обучения</h2>
+                <p class="section__description">Индивидуальные занятия</p>
+                <p class="section__description">Онлайн-курсы для изучения французского</p>
+                <p class="section__description">Подготовка к экзаменам DELF/DALF</p>
+                <p class="section__description">Детям</p>
+        </section>
+    </main>
+    <!--/ Основной контент -->
+    <!-- Подвал -->
+    <footer class="footer container">
+        <a class="footer__logo logo">L'Escargot</a>
+        <p class="footer__copy">&copy; L'Escargot — школа французского языка</p>
+        <p class="footer__copy">&copy; Проект: Евгений Голубков и Анастасия Мамутина</p>
+    </footer>
+    <!--/ Подвал -->
+    <!-- Формы -->
+    <div class="dialog dialog--layout">
+        <!-- Форма "Кабинет" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/close.png" alt="Закрыть окно" width="20"
+                    height="20"></button>
+            <h2 class="popup__title">Кабинет</h2>
+            <p class="popup__desc">Кабинет учеников школы</p>
+            <div class="popup__buttons">
+                <button class="button button--accent" type="button">Войти</button>
+                <button class="button" type="button">Регистрация</button>
+            </div>
+        </section>
+        <!--/ Форма "Кабинет" -->
+        <!-- Форма "Регистрация" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/close.png" alt="Закрыть окно" width="20"
+                    height="20"></button>
+            <h2 class="popup__title">Регистрация</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <fieldset class="form__fieldset">
+                    <div class="form__field-block">
+                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                        required>
+                </fieldset>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+            </form>
+        </section>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        <section class="section popup">
+            <button class="popup__close" type="button"><img src="images/close.png" alt="Закрыть окно" width="20"
+                    height="20"></button>
+            <h2 class="popup__title">Войти</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <fieldset class="form__buttons">
+                    <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+            </form>
+        </section>
+        <!--/ Форма "Войти" -->
+    </div>
+    <!--/ Формы -->
+</body>
+
+</html>
